@@ -150,6 +150,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--
                             <div class="snap">
                                 <ul>
                                     <li><a href=""><img src="<?php echo site_url(); echo $photos_snap_thumbpath;?>in.jpg" alt="" title=""></a></li>
@@ -234,7 +235,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+                        -->
                     </section>
                     
                    <!-- <section class="display">
