@@ -1,0 +1,308 @@
+//==================================================================|| BASE ELEMENTS ||=================================================================
+
+html { font-family: sans-serif;}
+
+body {
+    background-color: #fff;
+    margin: 0px; 
+    padding: 0px;
+}
+
+* { margin:0px; padding:0px; }
+
+
+//=====================================================================|| LAYOUT ||=====================================================================
+
+.wrapper {width: 100%; height: auto;}
+
+header {
+    height: 45px;
+    width: 98%;
+    color: #000;
+    padding:5px 1% 1px 1%;
+}
+
+nav {}
+
+.container {
+
+}
+
+.left_aside {
+
+}
+
+.right_aside {
+
+}
+
+footer {
+    padding: 1%;
+    color: #ffffff;
+}
+
+
+//============================================================|| LAYOUT'S STRUCTURE & DESIGN ||=========================================================
+
+
+
+//=====================================================================|| COMPONENTS ||=================================================================
+
+// 1. Boxes : Article, Paragraphs, Container, Iframes and other---------------------------------------------------------------------------------------------------------------------------------------
+// 1A. Box Default
+.box-default{
+    padding: 7px;
+}
+
+// Close Box -------------------------------------------------------------------------------------------------------------------------------------------
+
+.close-box {
+    font-family: sans-serif;
+    font-size: 14px;
+    border: solid 1px gray;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: red;
+    background-color: #ffffff;
+}
+.close-box:hover {
+    background-color: lightgray;
+    color:#ff0000;
+}
+
+// NavBar --------------------------------------------------------------------------------------------------------------------------------------
+
+
+.navbar ul {
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    border-bottom: solid 1px lightgray;
+}
+
+ul#navbar li a:hover {
+    background-color: #FFFFCC;
+}
+
+//Horizontal Nav Bar ----------------------------------------------------------------------------------------------------------------------------------
+
+.horizontal-nav {
+background: #efefef;
+border-radius: 6px;
+}
+.horizontal-nav ul {
+    background: #128F9A;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #0e7079;
+    list-style-type: none;
+}
+.horizontal-nav ul li {
+    float: left;
+    border-left: 1px solid #0e7079;
+}
+.horizontal-nav ul li:first-child {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255, 0.25);
+    border-left: 1px solid rgba(255,255,255, 0.25);
+}
+.horizontal-nav ul li:first-child a {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a:hover {
+    background: #12808a;
+}
+.horizontal-nav ul li:first-child a {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.horizontal-nav ul li:last-child a {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+//NavBar Collaspsable (Responsive) ---------------------------------------------------------------------------------------------------------------------
+
+body{ -webkit-animation: bugfix infinite 1s; }
+/*Required functional CSS don't change this bit */
+
+.mainMenu {display:block; position:relative; width:100%;margin:0; padding:0;float:left;}
+#toggleMenu {display: none;}
+#toggleMenu:checked ~ ul {max-height:100%; /*Make page height*/ opacity:1;}	
+.mainMenu > ul {width:100%; margin:0;padding:0; list-style:none; float:left; overflow-y: hidden; max-height:0;}
+
+.mainMenu li {margin:0;	padding:0; white-space:nowrap; display:block; width:100%; float:left;}
+
+.mainMenu a, .mainMenu a:visited {display:block; width:100%; /*required to make whole element clickable*/ }
+
+label.menuTitle {margin:0; display:block; cursor:pointer; background: url('../images/navbar/menu.png'); background-image: url('../images/navbar/menu.svg'), none; 
+                 background-repeat: no-repeat;background-position: 97% 10px; background-size: 24px 19px; /*Make same size as your menu.png*/ }
+
+@media screen and (min-width:768px) {
+    label.menuTitle {display:none;}	
+    .mainMenu ul {display:block!important; border:0; overflow:visible; max-height:100%!important;}
+    .mainMenu ul li {width:auto; display:inline; border:0;}
+}	
+/* Child CSS Functionality - do not change*/
+.mainMenu > ul ul {float:left; width:100%; margin:0; padding:0;}
+
+@media screen and (min-width:768px) {
+    .mainMenu > ul > li {position: relative;}
+    .mainMenu > ul > li:hover ul {display: block!important;}
+    .mainMenu > ul ul {display:none!important; position: absolute; left:0;}
+    .mainMenu > ul ul li {display: block; width:100%; float:left; padding:0; margin:0; }
+    .mainMenu .toggleChildren {display:none!important;}
+}
+/*End Child CSS Functionality*/
+
+/*Menu Styling CSS - change the below to suit your site!*/
+.mainMenu {
+    border-bottom:1px solid #ccc;
+}
+
+.mainMenu li {
+    border-top:1px solid #ccc;
+}
+
+.mainMenu a, .mainMenu a:visited {
+    color:#333;
+    text-decoration:none;
+    width:94%; /*Use 100% and box-sizing if not supporting ie7*/
+    padding:5px 3%;
+    background: none;
+}
+
+label.menuTitle {
+    font-size:20px;
+    width:94%;  /*Use 100% and box-sizing if not supporting ie7*/
+    padding:6px 3%;
+    font-weight:bold;
+}
+
+@media screen and (min-width:768px) {
+    .mainMenu li {
+        border:0;
+    }	
+    .mainMenu a:hover  {
+        color:#767676;
+    }
+    .mainMenu a, .mainMenu a:visited {
+        padding:10px 3px 10px 8px;
+    }
+}
+
+/*Menu Child Styling*/
+.mainMenu .toggleChildren {
+    float:right;
+    margin-right:3%;
+    width:30px; /*Note width is required */
+    height:30px; /*Customise to your menu height*/
+    padding:0;
+    display:block;
+    background:url(../images/navbar/nav-arrow.png) no-repeat center center;
+    background-size: 11px 8px; 
+}
+
+.mainMenu .toggleChildren.contract {
+    background:url(../images/navbar/nav-arrow.png) no-repeat center center;
+    background-size: 11px 8px; 
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+.mainMenu > ul ul a, .mainMenu > ul ul a:visited {
+    background:#eee;
+}
+
+@media screen and (min-width:768px) {
+    .mainMenu > ul > li:hover > a {
+        color:#767676;
+    }
+    .mainMenu > ul ul {
+        top:38px; /*height of your main nav*/
+        min-width:260px; /*Set your width*/
+    }
+    .mainMenu > ul ul a {
+        border:0;
+        border-bottom:1px solid #ccc;
+    }
+}
+/*End Menu Child Styling*/
+
+
+
+
+//============================================================|| PRESENTATIONAL ELEMENTS ||=============================================================
+article {
+    background-color: lightgray;
+    padding:4px;
+}
+p {
+    color: #000000;
+    margin: 9px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+h1, h2, h3 {padding:9px;}
+h4, h5, h6 {}
+
+h1 {
+    font-size: 40px;
+    color:#000000;
+    margin:auto;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {font-size: 30px; color:#000000;}
+h3 {font-size: 20px; color:#000000;}
+h4 {font-size: 16px;}
+h5 {font-size: 12px; color:#000000;}
+h6 {font-size: 8px; color:#000000;}
+
+img {}
+
+a {color:lightblue; text-decoration: none;}
+a:hover {color:blue;}
+
+fieldset {}
+legend {}
+
+hr {}
+
+
+//=================================================================|| UTILITY CLASSES ||==================================================================
+
+//GRIDS
+.pc5 {width: 5%; height:auto;}
+.pd10 {width: 5%; height:auto;}
+.pc15 {width: 5%; height:auto;}
+.pc20 {width: 5%; height:auto;}
+.pc25 {width: 5%; height:auto;}
+
+.float-left {float:left;}
+.float-right {float:right;}
+

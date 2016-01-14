@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2015, 5:38:29 PM
+    Author     : Maharaja
+*/
+body {background-color: lightgray}
+.animals-thumbs {display: inline-block; background-color: #fff; padding: 5px;}
+.animals-thumbs ul {display: block; padding: 2px;}
+.animals-thumbs ul li {list-style-type: none; margin: 5px 0px 2px 0px;}
+
+.animals-thumbs ul li a {list-style-type: none; background-color: #000; color: chartreuse; height: auto; width: auto; padding: 5px; display: block;}
+.animals-thumbs ul li a:hover {background-color: chartreuse; color: #000; text-decoration: none;}
+.animals-thumbs ul li a img {width: 60px; height: auto;}

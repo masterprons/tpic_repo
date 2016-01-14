@@ -1,0 +1,126 @@
+/*====================================================================|| BASE ELEMENTS ||==================================================================*/
+body {margin-top: 50px !important;}
+* {margin: 0px; padding: 0px; box-sizing: border-box; font-family: arial, sans-serif;}
+h1, h2, h3 {font-weight: lighter;}
+h1 {background-color: #FFC9DB; padding: 10px; text-align: center; height: auto;}
+h2 {}
+h3 {background-color: #FFBFE6; padding: 5px; text-align: center; height: auto;}
+p {}
+/*=================================================================|| LAYOUT AND STRUCTURE ||==============================================================*/
+
+.wrapper { width: 100%; height: 700px; background-color: #FFE3FF;}
+
+/*HEADER:-------------------------------------------------------------------(WRAPPER)>*/
+header {position: fixed; left: 0px; top: 0px; box-shadow: 0px 1px 10px 0px; -webkit-box-shadow: 0px 1px 10px 0px; -moz-box-shadow: 0px 1px 10px 0px;}
+header, footer {width: 100%; height: 50px; float: left; background-color: #FF6699; padding: 0px 2%;}
+.logo_space {width: 120px; height: 40px; float: left; margin: 5px;}
+.logo {width: 120px; height: 40px;}
+nav {width: 583px; height: auto; float: right;}
+nav ul {display: block; float: right;}
+nav ul li {float: left; list-style-type: none; display: inline;}
+nav ul li a {width: auto; height: auto; float: left; color: #fff; padding: 13px 15px; font-size: 20px; text-transform: uppercase; text-decoration: none; 
+            transition-duration: 0.4s; -webkit-transition-duration: 0.4s;}
+nav ul li a h2 {font-size: 16px; display: inline; padding: 0px; font-weight: lighter;}
+nav ul li a:hover {background-color: #FF1475;}
+
+@media screen and (max-width:769px){
+    nav {width: 44px; height: 44px; background-color: #fff; padding: 1px; border: solid 1px blue; margin: 2px;}
+    nav ul {width: 40px; height: 40px; background-color: #FF1475;}
+    nav ul li {display: none;}
+}
+
+.innerWrapper {width: 100%;}
+/*CONTAINER:------------------------------------------------------------(INNER WRAPPER)>*/
+.innerWrapper, .container, .latest_updates, .updates, .adSpace, .summery_snap, .photos_snap, .wallpapers_snap, .galleries_snap, .celebrities_snap, .display,
+.photos_display, .wallpapers_display, .galleries_display, .celebrities_display {float: left; height: auto;}
+.container, .latest_updates, .summery_snap, .display {width: 100%;}
+
+/*Latest Updates:---------------------------------(CONTAINER)>*/
+.latest_updates {margin: 5px 0px;}
+.updates_segment {width: 48%; padding: 0.5%; margin: auto 1%;background-color: white; float: left;}
+.thumb_details h2 {font-size: 14px; padding: 0px 3px; color: #FF1475;}
+.updates_segment a .thumb_details p {font-size: 11px; padding: 5px 3px; color: gray;}
+.thumbnail {width: 25%; float: left;}
+.thumb_details {float: left; width: 75%; padding: 7px;}
+.updates_segment a img {width: 100%;}
+.updates_segment a {width: 48%; float: left; font-size: 16px; text-decoration: none; margin: 5px 1%; border-bottom: 1px solid #CCCCFF;}
+
+/*Summery Snap:-----------------------------------(CONTAINER)>*/
+.summery_snap {}
+.photos_snap, .wallpapers_snap, .galleries_snap, .celebrities_snap {width: 99%; margin: 0.5%;height: auto; background-color: white; padding: 1%;}
+
+.photos_snap {}
+.photos_snap ul {display: block;}
+.photos_snap ul li{display: inline; float: left;}
+.photos_snap ul li a{}
+.photos_snap ul li a:hover {}
+.photos_snap ul li a img {}
+
+.wallpapers_snap {}
+.wallpapers_snap ul {display: block;}
+.wallpapers_snap ul li {display: inline; float: left;}
+.wallpapers_snap ul li a {}
+.wallpapers_snap ul li a:hover {}
+.wallpapers_snap ul li a img {}
+
+.galleries_snap {}
+.galleries_snap ul {display: block;}
+.galleries_snap ul li {display: inline; float: left;}
+.galleries_snap ul li a{}
+.galleries_snap ul li a:hover {}
+.galleries_snap ul li a img {}
+
+.celebrities_snap {}
+.celebrities_snap ul {display: block;}
+.celebrities_snap ul li {display: inline; float: left;}
+.celebrities_snap ul li a{}
+.celebrities_snap ul li a:hover {}
+.celebrities_snap ul li a img {}
+
+/*Display:----------------------------------------(CONTAINER)>*/
+.display {}
+.photos_display {}
+.photos_display ul {display: block;}
+.photos_display ul li {display: inline; float: left;}
+.photos_display ul li a{}
+.photos_display ul li a:hover {}
+.photos_display ul li a img {width: 50px; height: auto;}
+
+.wallpapers_display {}
+.wallpapers_display ul {display: block;}
+.wallpapers_display ul li {display: inline; float: left;}
+.wallpapers_display ul li a{}
+.wallpapers_display ul li a:hover {}
+.wallpapers_display ul li a img {width: 75px; height: auto;}
+
+.galleries_display {}
+.galleries_display ul {display: block;}
+.galleries_display ul li {display: inline; float: left;}
+.galleries_display ul li a{}
+.galleries_display ul li a:hover {}
+.galleries_display ul li a img {width: 75px; height: auto;}
+
+.celebrities_display {}
+.celebrities_display ul {display: block;}
+.celebrities_display ul li {display: inline; float: left;}
+.celebrities_display ul li a{}
+.celebrities_display ul li a:hover {}
+.celebrities_display ul li a img {width: 75px; height: auto;}
+
+/*FOOTER:------------------------------------------------------------------(WRAPPER)>*/
+footer {}
+
+/*ADVERTISEMENTS:------------------------------------------------------------(SPLIT)>*/
+
+.ad182x150, .ad730x92 {background-color: lightcyan;}
+.adpanel_full {width: 100%; float: left; margin: 5px auto;}
+.adblock_full {width: 730px; height: 100px; padding: 5px auto; margin: auto;}
+.adfloater {float: left; margin: 10px 5px;}
+.ad730x92 {width: 730px; height:92px;}
+.ad182x150 {width: 182px; height: 152px;}
+@media screen and (max-width: 1160px){
+    
+}
+.adblock_snap {width: 182px; margin: 5px auto;}
+
+
